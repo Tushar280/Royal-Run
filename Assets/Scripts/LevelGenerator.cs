@@ -7,7 +7,7 @@ public class LevelGenerator : MonoBehaviour
     {
         for(int i = 0; i < 5; i++)
         {
-            Debug.Log("Level Generated");
+            Debug.Log("Level Generated"+i);
         }
     }
 }
