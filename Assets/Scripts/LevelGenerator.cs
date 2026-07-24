@@ -11,7 +11,7 @@ public class LevelGenerator : MonoBehaviour
         for(int i =0;i < initialChunkAmt;i++)
         {
             
-            Instantiate(chunkPrefab, transform.position, Quaternion.identity);
+            Instantiate(chunkPrefab, transform.position, Quaternion.identity,chunkParent.transform);
         }
     }
 }
