@@ -8,6 +8,8 @@ public class LevelGenerator : MonoBehaviour
     void Start()
     {
         for(int i =0;i < initialChunkAmt;i++)
+        {
         Instantiate(chunkPrefab, transform.position, Quaternion.identity);
+        }
     }
 }
