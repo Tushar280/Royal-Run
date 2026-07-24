@@ -8,10 +8,11 @@ public class LevelGenerator : MonoBehaviour
     
     void Start()
     {
-        for(int i =0;i < initialChunkAmt;i++)
+        for(int i = 0 ; i < initialChunkAmt ; i++)
         {
-            
+            transform.position = new Vector3(0,0,i*10f); 
             Instantiate(chunkPrefab, transform.position, Quaternion.identity,chunkParent.transform);
+            Debug.Log("Chunk Spawned at " + transform.position);
         }
     }
 }
