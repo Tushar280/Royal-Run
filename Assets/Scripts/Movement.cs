@@ -8,8 +8,6 @@ public class Movement : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         move = context.ReadValue<Vector2>();
-        Debug.Log("Move");
-    }
-
-    
+        Debug.Log(move);
+    }  
 }
