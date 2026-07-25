@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     Rigidbody rb;
     Vector2 move;
     [SerializeField] float speed = 10f;
-
+    [SerializeField] Vector2 clamp;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -24,7 +24,10 @@ public class Movement : MonoBehaviour
         Vector3 moveDirection = new Vector3(move.x,0,0);
         Vector3 newPosition = currentPosition + (moveDirection * speed * Time.fixedDeltaTime);
 
+        newPosition.x = Mathf.Clamp(newPosition.x, -clamp.x,clamp.x);
         rb.MovePosition(newPosition);
+
+
     }
 
     public void Move(InputAction.CallbackContext context)
