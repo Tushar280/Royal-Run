@@ -6,7 +6,7 @@ public class ObstacleSpawn : MonoBehaviour
 {
     [SerializeField] GameObject obstacle;
     [SerializeField] int numToSpawn = 10;
-    [SerializeField] int waitPerSpawn = 3;
+    [SerializeField] int waitPerSpawn = 2;
 
     private void Start()
     {
@@ -17,9 +17,9 @@ public class ObstacleSpawn : MonoBehaviour
     IEnumerator SpawnObstacles()
     {
         
-        while(numToSpawn > 0)
+        while(true)
         {
-            Instantiate(obstacle,transform.position,Quaternion.identity);
+            Instantiate(obstacle,transform.position,Random.rotation);
             numToSpawn--;
             yield return new WaitForSeconds(waitPerSpawn);
         }
