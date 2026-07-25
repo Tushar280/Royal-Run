@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
     private void HandleMovement()
     {
         Vector3 currentPosition = rb.position;
-        Vector3 moveDirection = new Vector3(move.x,0,move.y);
+        Vector3 moveDirection = new Vector3(move.x,0,0);
         Vector3 newPosition = currentPosition + (moveDirection * speed * Time.fixedDeltaTime);
 
         rb.MovePosition(newPosition);
