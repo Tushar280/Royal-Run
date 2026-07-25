@@ -35,6 +35,14 @@ public class LevelGenerator : MonoBehaviour
         }
     }
 
+    private void SpawnNewChunk()
+    {
+        float chunkZ = chunks[chunks.Count - 1].transform.position.z + 10f;
+        transform.position = new Vector3(0,0,chunkZ); 
+        GameObject newChunk = Instantiate(chunkPrefab, transform.position, Quaternion.identity,chunkParent.transform);
+        chunks.Add(newChunk);
+    }
+
     private void MoveChunk()
     {
         for(int i = 0 ; i < chunks.Count ; i++)
@@ -45,7 +53,7 @@ public class LevelGenerator : MonoBehaviour
             {
                 Destroy(chunks[i]);
                 chunks.RemoveAt(i);
-                
+                SpawnNewChunk();  
             }
         }
     }
