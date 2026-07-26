@@ -18,7 +18,7 @@ public class ObstacleSpawn : MonoBehaviour
     {
         while(true)
         {
-            //Instantiate(obstacles[i],transform.position,Random.rotation);
+            Instantiate(obstacles[Random.Range(0,obstacles.Length)],transform.position,Random.rotation);
             numToSpawn--;
             yield return new WaitForSeconds(waitPerSpawn);
         }
