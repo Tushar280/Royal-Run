@@ -49,6 +49,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471ac7f20a3b13540bd5ffe0cabd5920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  lanes:
+  - -3
+  - 0
+  - 3
+  fence: {fileID: 3413589358110919970, guid: 6ee3b450520a86f4bb87f5793a020b6d, type: 3}
 --- !u!1 &5781575963126607690
 GameObject:
   m_ObjectHideFlags: 0
