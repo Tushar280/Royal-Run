@@ -594,6 +594,7 @@ MonoBehaviour:
   obstacles:
   - {fileID: 848475100524374063, guid: 8772bd9147653114daf7bd80bb991149, type: 3}
   - {fileID: 6905767017578083626, guid: 50787d33e0e71694d9005486a627265b, type: 3}
+  - {fileID: 1882936450156670793, guid: bb7cb8e66ab4a17448e15f3fb56bed5d, type: 3}
   numToSpawn: 10
   waitPerSpawn: 3
 --- !u!4 &423099432
