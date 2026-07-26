@@ -20,12 +20,12 @@ public class chunk : MonoBehaviour
         for(int i = 0; i < fencesToSpawn; i++)
         {
             int randIndex = Random.Range(0,availableLanes.Count);
+            int selectedLane = availableLanes[randIndex];
+            availableLanes.RemoveAt(randIndex);
+
+            Vector3 pos = new Vector3(lanes[selectedLane],transform.position.y,transform.position.z);
+            Instantiate(fence,pos,Quaternion.identity,transform);
         }
-
-
-
-
-
 
         /*RNG Solution
         int RandomNum = Random.Range(0,3);
