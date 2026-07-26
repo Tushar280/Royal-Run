@@ -591,7 +591,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16bd618d503e61144a95c261df332ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawn
-  obstacle: {fileID: 848475100524374063, guid: 8772bd9147653114daf7bd80bb991149, type: 3}
+  obstacles:
+  - {fileID: 848475100524374063, guid: 8772bd9147653114daf7bd80bb991149, type: 3}
+  - {fileID: 6905767017578083626, guid: 50787d33e0e71694d9005486a627265b, type: 3}
   numToSpawn: 10
   waitPerSpawn: 3
 --- !u!4 &423099432
