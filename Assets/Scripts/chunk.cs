@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class chunk : MonoBehaviour
 {
@@ -12,12 +13,27 @@ public class chunk : MonoBehaviour
 
     private void SpawnFence()
     {
+
+        List<int> availableLanes = new List<int>{0,1,3};
+        int fencesToSpawn = Random.Range(0,lanes.Length);
+
+        for(int i = 0; i < fencesToSpawn; i++)
+        {
+            int randIndex = Random.Range(0,availableLanes.Count);
+        }
+
+
+
+
+
+
+        /*RNG Solution
         int RandomNum = Random.Range(0,3);
         for(int i = 0;i <= RandomNum; i++)
         {
         Vector3 pos = new Vector3(lanes[Random.Range(0,lanes.Length)],transform.position.y,transform.position.z);
         Instantiate(fence,pos,Quaternion.identity,transform);
-        }
+        }*/
         
         
     }
