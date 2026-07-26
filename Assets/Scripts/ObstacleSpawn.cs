@@ -7,6 +7,7 @@ public class ObstacleSpawn : MonoBehaviour
     [SerializeField] GameObject[] obstacles;
     [SerializeField] int numToSpawn = 10;
     [SerializeField] int waitPerSpawn = 2;
+    [SerializeField] GameObject obstacleParent;
 
     private void Start()
     {
@@ -18,7 +19,7 @@ public class ObstacleSpawn : MonoBehaviour
     {
         while(true)
         {
-            Instantiate(obstacles[Random.Range(0,obstacles.Length)],transform.position,Random.rotation);
+            Instantiate(obstacles[Random.Range(0,obstacles.Length)],transform.position,Random.rotation,obstacleParent.transform);
             numToSpawn--;
             yield return new WaitForSeconds(waitPerSpawn);
         }
