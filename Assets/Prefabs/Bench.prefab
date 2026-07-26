@@ -52,7 +52,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4883233352316205817, guid: 4c39b1f701ec2de46af88aa81689be7e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -73,6 +74,30 @@ PrefabInstance:
     - target: {fileID: 1622166651645986281, guid: 42179184c9941c04ab493f64d1edec96, type: 3}
       propertyPath: m_Name
       value: Bench
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854220477616205217, guid: 42179184c9941c04ab493f64d1edec96, type: 3}
+      propertyPath: m_Size.x
+      value: 1.9818552
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854220477616205217, guid: 42179184c9941c04ab493f64d1edec96, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5885765
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854220477616205217, guid: 42179184c9941c04ab493f64d1edec96, type: 3}
+      propertyPath: m_Size.z
+      value: 0.7316741
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854220477616205217, guid: 42179184c9941c04ab493f64d1edec96, type: 3}
+      propertyPath: m_Center.x
+      value: 0.00964725
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854220477616205217, guid: 42179184c9941c04ab493f64d1edec96, type: 3}
+      propertyPath: m_Center.y
+      value: 0.29110023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854220477616205217, guid: 42179184c9941c04ab493f64d1edec96, type: 3}
+      propertyPath: m_Center.z
+      value: -0.007880747
       objectReference: {fileID: 0}
     - target: {fileID: 8355961161822280904, guid: 42179184c9941c04ab493f64d1edec96, type: 3}
       propertyPath: m_LocalPosition.x
