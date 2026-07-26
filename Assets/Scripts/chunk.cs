@@ -14,7 +14,7 @@ public class chunk : MonoBehaviour
     private void SpawnFence()
     {
 
-        List<int> availableLanes = new List<int>{0,1,3};
+        List<int> availableLanes = new List<int>{0,1,2};
         int fencesToSpawn = Random.Range(0,lanes.Length);
 
         for(int i = 0; i < fencesToSpawn; i++)
