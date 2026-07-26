@@ -7,9 +7,19 @@ public class chunk : MonoBehaviour
 
     private void Start()
     {
-        Vector3 pos = new Vector3(lanes[Random.Range(0,lanes.Length)],transform.position.y,transform.position.z);
-        Instantiate(fence,pos,Quaternion.identity,transform);   
+        SpawnFence();
     }
 
+    private void SpawnFence()
+    {
+        int RandomNum = Random.Range(0,3);
+        for(int i = 0;i <= RandomNum; i++)
+        {
+        Vector3 pos = new Vector3(lanes[Random.Range(0,lanes.Length)],transform.position.y,transform.position.z);
+        Instantiate(fence,pos,Quaternion.identity,transform);
+        }
+        
+        
+    }
     
 }
