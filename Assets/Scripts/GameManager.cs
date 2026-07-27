@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        score = Time.deltaTime * scoreFactor;
-        scoreUI.text = score.ToString("2D");
+        score = Time.time * scoreFactor;
+        scoreUI.text = ((int)score).ToString();
     }
     
 }
