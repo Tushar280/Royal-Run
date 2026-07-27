@@ -278,6 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f812ef478bc4f4aa672409da03a3f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
+  anim: {fileID: 559427302}
 --- !u!1001 &313731088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -685,6 +686,11 @@ Transform:
 --- !u!4 &559427301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6410221756858730007, guid: dcbc89efbe5bd174b99e07c76bd0b6bf, type: 3}
+  m_PrefabInstance: {fileID: 313731088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &559427302 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1014860696115371117, guid: dcbc89efbe5bd174b99e07c76bd0b6bf, type: 3}
   m_PrefabInstance: {fileID: 313731088}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &687925059
@@ -1106,7 +1112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   scoreUI: {fileID: 1318804613}
-  coinUI: {fileID: 0}
+  coinUI: {fileID: 1154723657}
   scoreFactor: 10
 --- !u!4 &1348595523
 Transform:

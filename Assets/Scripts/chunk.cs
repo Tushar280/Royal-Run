@@ -29,7 +29,7 @@ public class chunk : MonoBehaviour
             int selectedLane = availableLanes[randIndex];
             availableLanes.RemoveAt(randIndex);
 
-            Vector3 pos = new Vector3(lanes[selectedLane],transform.position.y,transform.position.z);
+            Vector3 pos = new Vector3(lanes[selectedLane],transform.position.y - 0.5f,transform.position.z);
             Instantiate(fence,pos,Quaternion.identity,transform);
         }
 

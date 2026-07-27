@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
+    [SerializeField] Animator anim;
     GameManager gm;
+    
 
     private void Start()
     {
@@ -13,12 +15,16 @@ public class PlayerCollision : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Coin"))
         {
-            gm.CollectCoin(1);
+            gm.CollectCoin(10);
             Destroy(other.gameObject);
         }
         else if(other.gameObject.CompareTag("Obstacle"))
         {
             gm.GameOver();
+        }
+        else if(other.gameObject.CompareTag("Fence"))
+        {
+            anim.SetTrigger("Hit");
         }
     }
     
