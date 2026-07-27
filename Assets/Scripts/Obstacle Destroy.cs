@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class ObstacleDestroy : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Obstacle"))
+        if(other.gameObject.CompareTag("Obstacle"))
         {
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
         }
     }
 }

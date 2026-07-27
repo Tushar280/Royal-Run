@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box
       objectReference: {fileID: 0}
+    - target: {fileID: 1622166651645986281, guid: 42179184c9941c04ab493f64d1edec96, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3854220477616205217, guid: 42179184c9941c04ab493f64d1edec96, type: 3}
       propertyPath: m_Size.y
       value: 1.0529385
