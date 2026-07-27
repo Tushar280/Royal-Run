@@ -54,6 +54,7 @@ MonoBehaviour:
   - 0
   - 3
   fence: {fileID: 3413589358110919970, guid: 6ee3b450520a86f4bb87f5793a020b6d, type: 3}
+  Coin: {fileID: 8514698897546867328, guid: 747fa47960003ab478c072b42abea1f2, type: 3}
 --- !u!1 &5781575963126607690
 GameObject:
   m_ObjectHideFlags: 0

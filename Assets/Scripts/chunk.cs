@@ -5,20 +5,26 @@ public class chunk : MonoBehaviour
 {
     [SerializeField] float[] lanes = {-3.0f,0.0f,3.0f};
     [SerializeField] GameObject fence;
+    [SerializeField] GameObject Coin;
+
+    List<int> availableLanes = new List<int>{0,1,2};
 
     private void Start()
     {
         SpawnFence();
+        SpawnCoin();
     }
 
     private void SpawnFence()
     {
 
-        List<int> availableLanes = new List<int>{0,1,2};
+        
         int fencesToSpawn = Random.Range(0,lanes.Length);
 
         for(int i = 0; i < fencesToSpawn; i++)
         {
+            if(availableLanes.Count <= 0) break;
+
             int randIndex = Random.Range(0,availableLanes.Count);
             int selectedLane = availableLanes[randIndex];
             availableLanes.RemoveAt(randIndex);
@@ -36,6 +42,13 @@ public class chunk : MonoBehaviour
         }*/
         
         
+    }
+
+    private void SpawnCoin()
+    {
+        int availableLane = availableLanes[0];
+        Vector3 spawnPos = new Vector3(lanes[availableLane],transform.position.y + 1,transform.position.z);
+        Instantiate(Coin,spawnPos,Quaternion.identity,transform);
     }
     
 }
