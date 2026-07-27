@@ -608,7 +608,7 @@ Transform:
   m_GameObject: {fileID: 423099430}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.884, z: 18.88}
+  m_LocalPosition: {x: 0, y: 2.12, z: 20.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   scoreUI: {fileID: 1318804613}
-  scoreFactor: 1
+  scoreFactor: 10
 --- !u!4 &1348595523
 Transform:
   m_ObjectHideFlags: 0
