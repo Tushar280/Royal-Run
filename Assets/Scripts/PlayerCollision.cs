@@ -20,7 +20,7 @@ public class PlayerCollision : MonoBehaviour
         }
         else if(other.gameObject.CompareTag("Obstacle"))
         {
-            gm.GameOver();
+            gm.ChangeLife(-1);
         }
         else if(other.gameObject.CompareTag("Fence"))
         {

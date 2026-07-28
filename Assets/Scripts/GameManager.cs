@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -6,14 +7,26 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] TMP_Text scoreUI;
     [SerializeField] TMP_Text coinUI;
+    [SerializeField] TMP_Text lifeUI;
+
     [SerializeField] float scoreFactor;
+    [SerializeField] GameObject GameOverUI;
+    [SerializeField] Image red;
     float score = 0;
     int coins = 0;
+    int life = 3;
 
     private void Update()
     {
         score = Time.time * scoreFactor;
         scoreUI.text = ((int)score).ToString();
+
+        if(life <=0)
+        {
+            //Death Screen
+            //Red border effect
+
+        }
     }
 
     public void CollectCoin(int amount)
@@ -22,9 +35,10 @@ public class GameManager : MonoBehaviour
         coinUI.text = coins.ToString();
     }
 
-    public void GameOver()
+    public void ChangeLife(int amount)
     {
-        Debug.Log("Game Over");
+        life += amount;
+        lifeUI.text = life.ToString();
     }
     
 }
