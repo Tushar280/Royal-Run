@@ -21,6 +21,7 @@ public class PlayerCollision : MonoBehaviour
         else if(other.gameObject.CompareTag("Obstacle"))
         {
             gm.ChangeLife(-1);
+            Destroy(other.gameObject);
         }
         else if(other.gameObject.CompareTag("Fence"))
         {
