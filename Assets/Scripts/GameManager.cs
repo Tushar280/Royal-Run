@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour
         if(life <=0)
         {
             //Death Screen
+            GameOverUI.SetActive(true);
             //Red border effect
-
         }
     }
 
