@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] float scoreFactor;
     [SerializeField] GameObject GameOverUI;
     [SerializeField] Image red;
+    [SerializeField] Button playAgainButton;
+    [SerializeField] Button menuButton;
+
     float score = 0;
     int coins = 0;
     int life = 3;
@@ -45,5 +49,15 @@ public class GameManager : MonoBehaviour
     void StopRed()
     {
         red.gameObject.SetActive(false);
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
