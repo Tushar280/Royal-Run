@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     public void ChangeLife(int amount)
     {
         red.gameObject.SetActive(true);
-        Invoke("StopRed", 0.5f);
+        Invoke("StopRed", 0.2f);
         life += amount;
         lifeUI.text = life.ToString();
     }
